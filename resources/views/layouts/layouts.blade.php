@@ -3,13 +3,15 @@
 
 <head>
     <x-layouts.head />
-    <title>{{ config('app.name') }}</title>
+    <title></title>
 </head>
 
 <body>
     <header>
         <x-layouts.nav />
     </header>
+    <x-alert />
+    @yield('content')
 </body>
 
 </html>
